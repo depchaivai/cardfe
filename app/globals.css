@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family: "Exmouth";
+  src: url("/fonts/exmouth_.ttf");
+}
+@font-face {
+  font-family: "Indulge";
+  src: url("/fonts/IndulgeScript.otf");
+}
+@font-face {
+  font-family: "SVNGeorgia";
+  src: url("/fonts/SVN-GeorgiaScript/SVN-Georgia\ Script.otf");
+}
+@font-face {
+  font-family: "SVNHeavenly";
+  src: url("/fonts/SVN-Heavenly/SVN-Heavenly.otf");
+}
+@font-face {
+  font-family: "SVNPalmaton";
+  src: url("/fonts/SVN-Palmaton/SVN-Palmaton.otf");
+}
+@font-face {
+  font-family: "SVNPleasent";
+  src: url("/fonts/SVN-Pleasent/SVN-Pleasent.otf");
+}
+@font-face {
+  font-family: "SVNTakenbyVultures";
+  src: url("/fonts/SVN-TakenbyVultures/SVN-Taken\ by\ Vultures.otf");
+}
+@font-face {
+  font-family: "SVNTanglewoodsEx";
+  src: url("/fonts/SVN-Tanglewoods/SVN-Tanglewoods\ Extras.otf");
+}
+@font-face {
+  font-family: "SVNTanglewoodsSan";
+  src: url("/fonts/SVN-Tanglewoods/SVN-Tanglewoods\ Sans.otf");
+}
+@font-face {
+  font-family: "SVNTanglewoodsS";
+  src: url("/fonts/SVN-Tanglewoods/SVN-Tanglewoods\ Script.otf");
+}
+@font-face {
+  font-family: "SVNWaliglona";
+  src: url("/fonts/SVN-Waliglona/SVN-Waliglona.otf");
+}
