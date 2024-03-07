@@ -1,11 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-interface AlbumProps {
-    albums: string[] | undefined;
-}
-
-const Album: React.FC<AlbumProps> = ({ albums }) => {
+const Album = ({ albums }) => {
     return (
         <div className="flex max-w-[1024px] flex-wrap py-2">
             {

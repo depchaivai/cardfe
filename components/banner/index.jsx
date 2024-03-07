@@ -3,7 +3,7 @@ import React from 'react';
 import { GiColdHeart } from "react-icons/gi";
 
 
-const Banner: React.FC = ({info}) => {
+const Banner = ({info}) => {
     return (
         <div className="md:min-h-[550px] h-svh relative bg-white">
             <Image

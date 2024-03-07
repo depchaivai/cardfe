@@ -4,10 +4,7 @@ import CircleImage from '../heartImage';
 import { GiHeartWings } from "react-icons/gi";
 import {typeData , invitationData} from "../../service/myUtils/handleSex";
 
-interface WInforProps {
-    // Add any props here
-}
-const WInfor: FC<WInforProps> = ({info, sex = 'lrm', invt = 'both1', guestName =''}) => {
+const WInfor = ({info, sex = 'lrm', invt = 'both1', guestName =''}) => {
     const invtData = invitationData[invt];
     let ten = '';
     if (guestName !== '') {
