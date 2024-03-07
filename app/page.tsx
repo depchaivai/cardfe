@@ -88,13 +88,13 @@ export default async function Home({searchParams}) {
               <div className="md:w-[160px] w-full md:h-[160px] md:rounded-full overflow-hidden">
                 <Image src={'/codau.jpg'} width={500} height={500} objectFit="cover" alt={""}/>
               </div>
-              <div className="p-5 w-full md:w-[calc(100%_-_160px)]">"{info.girlThink}"</div>
+              <div className="p-5 w-full md:w-[calc(100%_-_160px)]">&quot;{info.girlThink}&quot;</div>
             </div>
             <div className="w-[40px]">
               <GiSelfLove size={30}/>
             </div>
             <div className="w-full md:w-[calc(50%_-_20px)] flex flex-col md:flex-row">
-              <div className="p-5 w-ful md:w-[calc(100%_-_160px)]">"{info.boyThink}"</div>
+              <div className="p-5 w-ful md:w-[calc(100%_-_160px)]">&quot;{info.boyThink}&quot;</div>
               <div className="w-full md:w-[160px] md:h-[160px] md:rounded-full overflow-hidden">
                 <Image src={'/chure.jpg'} width={500} height={500} objectFit="cover" alt={""}/>
               </div>
