@@ -28,6 +28,7 @@ const config: Config = {
         'stans': ['SVNTanglewoodsS', 'system-ui'],
         'swal': ['SVNWaliglona', 'system-ui'],
         'hel': ['Helvetica', 'system-ui'],
+        'mono': ['ui-monospace', 'SFMono-Regular'],
       }
     },
   },
