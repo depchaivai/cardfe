@@ -14,13 +14,13 @@ const WInfor = ({info, sex = 'lrm', invt = 'both1', guestName =''}) => {
         <div className="w-full h-full flex flex-wrap justify-center bg-amber-50 min-h-[700px] mt-10" style={{ backgroundImage: "url('/h4.png')", backgroundSize: "cover"}}>
             <div className="w-full max-w-[500px] p-6 md:p-16 font-ind">
                 <div className='flex w-full justify-between text-lg tracking-wide'>
-                    <div className="min-w-[120px] text-center">
-                    <div className='font-bold uppercase pb-3'>Nhà trai</div>
+                    <div className="w-1/2 text-center">
+                        <div className='font-bold uppercase pb-3'>Nhà trai</div>
                         <i className=''>Ông: {info.boyDad}</i>
                         <br />
                         <i className='font-extralight'>Bà: {info.boyMom}</i>
                         <br />
-                        <i className='font-extralight text-sm max-w-[180px]'>{info.boyInfoAdr}</i>
+                        <i className='font-extralight text-sm'>{info.boyInfoAdr}</i>
                     </div>
                     <div className="min-w-[120px] text-center">
                         <div className='font-bold uppercase pb-3'>Nhà gái</div>
@@ -28,7 +28,7 @@ const WInfor = ({info, sex = 'lrm', invt = 'both1', guestName =''}) => {
                         <br />
                         <i className='font-extralight'>Bà: {info.girlMom}</i>
                         <br />
-                        <i className='font-extralight text-sm max-w-[180px]'>{info.girlInfoAdr}</i>
+                        <i className='font-extralight text-sm'>{info.girlInfoAdr}</i>
                     </div>
                 </div>
                 <div className="flex items-center flex-col w-full pt-16">
