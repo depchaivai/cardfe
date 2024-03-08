@@ -120,8 +120,7 @@ export default async function Home({searchParams}) {
           </div>
           <h3 className="font-sgeo text-2xl font-bold mt-14 text-pink-400">Vị trí</h3>
           <div className="w-full mx-auto max-w-[1000px] mb-12">
-            <div className="mt-10 italic text-md flex w-full justify-center items-center"><FaMapMarkerAlt className="mr-2"/><Link target="_black" href={info[typeData[zxcqaz].mapLink]}>{info[typeData[zxcqaz].map]}</Link></div>
-            <div className="w-full relative h-[300px] mt-4"><Link target="_black" href={info[typeData[zxcqaz].mapLink]}><Image src={typeData[zxcqaz].mapImage} layout="fill" objectFit="cover" alt={"map"}/></Link></div>
+            <iframe src={info[typeData[zxcqaz].mapLink]} width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="w-full max-w-[1000px] mx-auto"></iframe>
           </div>
         </div>
         <div className="w-full text-6xl md:text-9xl h-[400px] bg-red-400 flex justify-center items-center font-exm">
