@@ -7,7 +7,7 @@ const Banner = ({info}) => {
     return (
         <div className="md:min-h-[550px] h-svh relative bg-white">
             <Image
-                src="/topbanner.jpg"
+                src="/topbanner.jfif"
                 alt="trăm năm hạnh phúc"
                 layout="fill"
                 objectFit='cover'
