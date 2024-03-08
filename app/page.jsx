@@ -14,7 +14,7 @@ import GuestSubmit from "@/components/clientComponents/guestSubmit";
 import Link from "next/link";
 
 async function getInfo() {
-  const res = await fetch('http://cardbe.txh1oupnabgh4p.flashvps.xyz/api/info', { next: { revalidate: 1800 } });
+  const res = await fetch('https://cardbe.txh1oupnabgh4p.flashvps.xyz/api/info', { next: { revalidate: 1800 } });
   if (!res.ok) {
     throw new Error('Failed to fetch data');
   }
@@ -23,7 +23,7 @@ async function getInfo() {
 }
 
 async function getAlbum() {
-  const res = await fetch('http://cardbe.txh1oupnabgh4p.flashvps.xyz/api/album');
+  const res = await fetch('https://cardbe.txh1oupnabgh4p.flashvps.xyz/api/album');
   if (!res.ok) {
     throw new Error('Failed to fetch data');
   }

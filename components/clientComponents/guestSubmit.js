@@ -17,7 +17,7 @@ const GuestSubmit = ({invt, guestName}) => {
       }
       setSubmitted('Đang gửi');
       try {
-        const response = await fetch(`http://cardbe.txh1oupnabgh4p.flashvps.xyz/api/feedback?gname=${gname}&gsubmit=${gsubmit}&gmessage=${gmessage}&goriginname=${goriginname}`, {
+        const response = await fetch(`https://cardbe.txh1oupnabgh4p.flashvps.xyz/api/feedback?gname=${gname}&gsubmit=${gsubmit}&gmessage=${gmessage}&goriginname=${goriginname}`, {
           method: 'GET',
         });
         if (response.ok) {
