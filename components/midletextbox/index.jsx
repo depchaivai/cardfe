@@ -12,15 +12,15 @@ const WInfor = ({info, sex = 'lrm', invt = 'both1', guestName =''}) => {
     }
     return (
         <div className="w-full h-full flex flex-wrap justify-center bg-amber-50 min-h-[700px] mt-10" style={{ backgroundImage: "url('/h4.png')", backgroundSize: "cover"}}>
-            <div className="w-full max-w-[500px] p-6 md:p-16 font-ind">
+            <div className="w-full max-w-[500px] p-6 md:p-10 font-ind">
                 <div className='flex w-full justify-between text-lg tracking-wide'>
                     <div className="w-1/2 max-w-[180px] text-center">
                         <div className='font-bold uppercase pb-3'>Nhà trai</div>
-                        <i className=''>Ông: {info.boyDad}</i>
+                        <i className='font-extralight'>Ông: {info.boyDad}</i>
                         <br />
                         <i className='font-extralight'>Bà: {info.boyMom}</i>
                         <br />
-                        <i className='font-extralight text-sm'>{info.boyInfoAdr}</i>
+                        <i className='font-extralight text-sm text-'>{info.boyInfoAdr}</i>
                     </div>
                     <div className="w-1/2 max-w-[180px] text-center">
                         <div className='font-bold uppercase pb-3'>Nhà gái</div>
