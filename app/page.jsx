@@ -38,9 +38,20 @@ export default async function Home({searchParams}) {
   if (!['lrm', 'tnr'].includes(zxcqaz)) {
     zxcqaz = 'lrm';
   }
+  let host1 = searchParams?.host1 || '';
+  let host2 = searchParams?.host2 || '';
+  let guest = searchParams?.guest || '';
   let edcxsw = searchParams?.edcxsw || 'both1';
+  let customData = {};
   if (!invitationDataKeys.includes(edcxsw)) {
-    edcxsw = 'both1';
+    if (host1 && host2 && guest) {
+      customData.host = host1;
+      customData.host2 = host2;
+      customData.guest = guest;
+      edcxsw = 'custom';
+    } else {
+      edcxsw = 'both1';
+    }
   }
   let ten = searchParams?.ten || '';
   const data = await getInfo();
@@ -49,8 +60,8 @@ export default async function Home({searchParams}) {
   const album = await getAlbum();
   return (
     <div className="bg-amber-50">
-      <Banner info = {info} sex = {zxcqaz} invt = {edcxsw}/>
-      <WInfor info = {info} sex = {zxcqaz} invt = {edcxsw} guestName = {ten}/>
+      <Banner info = {info} sex = {zxcqaz} invt = {edcxsw} customData = {customData}/>
+      <WInfor info = {info} sex = {zxcqaz} invt = {edcxsw} guestName = {ten} customData = {customData}/>
        <div className="md:mt-[-180px]">
         <div className="flex w-full">
           <div className="md:w-1/2 hidden md:block"></div>

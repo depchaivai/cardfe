@@ -4,8 +4,10 @@ import CircleImage from '../heartImage';
 import { GiHeartWings } from "react-icons/gi";
 import {typeData , invitationData} from "../../service/myUtils/handleSex";
 
-const WInfor = ({info, sex = 'lrm', invt = 'both1', guestName =''}) => {
-    const invtData = invitationData[invt];
+const WInfor = ({info, sex = 'lrm', invt = 'both1', guestName ='', customData}) => {
+    let invtHost = invt === 'custom' ? customData['host'] : invitationData[invt].host;
+    let invtHost2 = invt === 'custom' ? customData['host2'] : invitationData[invt].host2;
+    let invtGuest = invt === 'custom' ? customData['guest'] : invitationData[invt].guest;
     let ten = '';
     if (guestName !== '') {
         ten = ` ${guestName}`;
@@ -33,8 +35,8 @@ const WInfor = ({info, sex = 'lrm', invt = 'both1', guestName =''}) => {
                 </div>
                 <div className="flex items-center flex-col w-full pt-16">
                     <div className="font-bold text-xl font-mono">TRÂN TRỌNG KÍNH MỜI</div>
-                    <div><b className='first-letter:uppercase'>{invtData.guest + ten} tới dự buổi tiệc cưới</b></div>
-                    <div className='font-extralight'>chung vui cùng gia đình {invtData.host2}</div>
+                    <div><b className='first-letter:uppercase'>{invtGuest + ten} tới dự buổi tiệc cưới</b></div>
+                    <div className='font-extralight'>chung vui cùng gia đình {invtHost2}</div>
                 </div>
                 <div className="flex items-center w-full pt-16 justify-between">
                     <div>{info.boyName}</div>
