@@ -31,7 +31,7 @@ const GuestSubmit = ({invt, guestName}) => {
     }
     return (
         <div className="w-full mx-auto max-w-[1000px] mt-8">
-          <div className="font-sgeo text-3xl font-bold p-6">BẠN SẼ ĐẾN CHỨ</div>
+          <div className="font-sgeo text-2xl font-bold p-6 text-pink-400">Bạn sẽ đến chứ</div>
           <div className="w-full flex p-6 md:p-10 flex-col md:flex-row">
             <div className="md:w-1/2 w-full">
               <div className="w-[90%]">

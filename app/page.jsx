@@ -106,10 +106,10 @@ export default async function Home({searchParams}) {
       </div>
         <GuestSubmit invt={edcxsw} guestName={ten}/>
         <div className="flex mx-auto w-full max-w-[600px]">
-          <div className="text-center italic text-slate-600 text-sm px-6">{invitationData[edcxsw].host} rất muốn chụp với {invitationData[edcxsw].guest} những tấm hình kỷ niệm, vì vậy hãy đến sớm hơn một chút {invitationData[edcxsw].guest} nhé! Đám cưới của chúng {invitationData[edcxsw].host} sẽ trọn vẹn hơn khi có thêm lời chúc và sự hiện diện của {invitationData[edcxsw].guest}.</div>
+          <div className="text-center italic text-slate-600 text-sm px-6 first-letter:uppercase">{invitationData[edcxsw].host} rất muốn chụp với {invitationData[edcxsw].guest} những tấm hình kỷ niệm, vì vậy hãy đến sớm hơn một chút {invitationData[edcxsw].guest} nhé! Đám cưới của chúng {invitationData[edcxsw].host} sẽ trọn vẹn hơn khi có thêm lời chúc và sự hiện diện của {invitationData[edcxsw].guest}.</div>
         </div>
         <div className="max-w-[1000px] mx-auto p-6 mt-10">
-          <h3 className="font-sgeo text-2xl font-bold">Có thể bạn sẽ cần</h3>
+          <h3 className="font-sgeo text-2xl font-bold text-pink-400">Có thể bạn sẽ cần</h3>
           <div className="w-full flex-col sm:flex-row flex mt-10">
             <div className="w-full sm:w-1/2 flex justify-center">
               <Bankacc who="CÔ DÂU" stk = "19036502426015" name = "HO THI THANH LOAN" qr = "/loanqr.jpg" bankName = "Techcombank"/>
@@ -118,7 +118,7 @@ export default async function Home({searchParams}) {
               <Bankacc who="CHÚ RỂ" stk = "9941308700" name = "TRAN THIEN TRI" qr = "/triqr.jpg" bankName = "Vietcombank"/>
             </div>
           </div>
-          <h3 className="font-sgeo text-2xl font-bold mt-14">Vị trí</h3>
+          <h3 className="font-sgeo text-2xl font-bold mt-14 text-pink-400">Vị trí</h3>
           <div className="w-full mx-auto max-w-[1000px] mb-12">
             <div className="mt-10 italic text-md flex w-full justify-center items-center"><FaMapMarkerAlt className="mr-2"/><Link target="_black" href={info[typeData[zxcqaz].mapLink]}>{info[typeData[zxcqaz].map]}</Link></div>
             <div className="w-full relative h-[300px] mt-4"><Link target="_black" href={info[typeData[zxcqaz].mapLink]}><Image src={typeData[zxcqaz].mapImage} layout="fill" objectFit="cover" alt={"map"}/></Link></div>
