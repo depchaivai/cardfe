@@ -106,7 +106,7 @@ export default async function Home({searchParams}) {
       </div>
         <GuestSubmit invt={edcxsw} guestName={ten}/>
         <div className="flex mx-auto w-full max-w-[600px]">
-          <div className="text-center italic text-slate-600 text-sm px-6 first-letter:uppercase">{invitationData[edcxsw].host} rất muốn chụp với {invitationData[edcxsw].guest} những tấm hình kỷ niệm, vì vậy hãy đến sớm hơn một chút {invitationData[edcxsw].guest} nhé! Đám cưới của chúng {invitationData[edcxsw].host} sẽ trọn vẹn hơn khi có thêm lời chúc và sự hiện diện của {invitationData[edcxsw].guest}.</div>
+          <div className="text-center italic text-slate-600 text-sm px-6 first-letter:uppercase">{invitationData[edcxsw].host} rất muốn chụp với {invitationData[edcxsw].guest} những tấm hình kỷ niệm, vì vậy hãy đến sớm hơn một chút {invitationData[edcxsw].guest} nhé! Đám cưới của {invitationData[edcxsw].host2} sẽ trọn vẹn hơn khi có thêm lời chúc và sự hiện diện của {invitationData[edcxsw].guest}.</div>
         </div>
         <div className="max-w-[1000px] mx-auto p-6 mt-10">
           <h3 className="font-sgeo text-2xl font-bold text-pink-400">Có thể bạn sẽ cần</h3>
