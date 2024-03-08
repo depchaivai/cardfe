@@ -33,8 +33,8 @@ const WInfor = ({info, sex = 'lrm', invt = 'both1', guestName =''}) => {
                 </div>
                 <div className="flex items-center flex-col w-full pt-16">
                     <div className="font-bold text-xl font-mono">TRÂN TRỌNG KÍNH MỜI</div>
-                    <div><b className='first-letter:uppercase'>{invtData.guest + ten} cùng gia đình</b></div>
-                    <div className='font-extralight'><i>Tới dự lễ {typeData[sex].partyName} của {invtData.host2}</i></div>
+                    <div><b className='first-letter:uppercase'>{invtData.guest + ten} tới tham dự</b></div>
+                    <div className='font-extralight'><i>buổi tiệc cưới chung vui cùng gia đình {invtData.host2}</i></div>
                 </div>
                 <div className="flex items-center w-full pt-16 justify-between">
                     <div>{info.boyName}</div>
