@@ -7,7 +7,8 @@ export const typeData = {
     timeText2: 'girlTimeText2',
     place: 'gia đình nhà gái',
     partyName: 'Vu Quy',
-    mapImage: '/girlmap.png'
+    mapImage: '/girlmap.png',
+    infoAdr: 'girlInfoAdr'
   },
   tnr: {
     map: 'boyMap',
@@ -17,7 +18,8 @@ export const typeData = {
     timeText2: 'boyTimeText2',
     place: 'gia đình nhà trai',
     partyName: 'Tân Hôn',
-    mapImage: '/boymap.png'
+    mapImage: '/boymap.png',
+    boyInfoAdr: 'boyInfoAdr'
   }
 }
 export const invitationData = {

@@ -19,12 +19,16 @@ const WInfor = ({info, sex = 'lrm', invt = 'both1', guestName =''}) => {
                         <i className=''>Ông: {info.boyDad}</i>
                         <br />
                         <i className='font-extralight'>Bà: {info.boyMom}</i>
+                        <br />
+                        <i className='font-extralight text-sm max-w-[180px]'>{info.boyInfoAdr}</i>
                     </div>
                     <div className="min-w-[120px] text-center">
                         <div className='font-bold uppercase pb-3'>Nhà gái</div>
                         <i className='font-extralight'>Ông: {info.girlDad}</i>
                         <br />
                         <i className='font-extralight'>Bà: {info.girlMom}</i>
+                        <br />
+                        <i className='font-extralight text-sm max-w-[180px]'>{info.girlInfoAdr}</i>
                     </div>
                 </div>
                 <div className="flex items-center flex-col w-full pt-16">

@@ -19,6 +19,8 @@ export const useHandleInfo = (info) => {
     girlThink: info?.girl_think?.value || '',
     boyMapLink: info?.boy_map_link?.value || '',
     girlMapLink: info?.girl_map_link?.value || '',
+    boyInfoAdr: info?.boy_info_adr?.value || '',
+    girlInfoAdr: info?.girl_info_adr?.value || '',
   };
   return newData;
 }
