@@ -12,7 +12,7 @@ interface BankaccProps {
 const Bankacc: React.FC<BankaccProps> = ({who = 'CÔ DÂU', stk, name, bankName, qr}) => {
 
     return (
-        <div className='w-[200px] flex flex-col items-center'>
+        <div className='w-full max-w-[230px] flex flex-col items-center'>
             <div className='w-full text-center'><b>{who}</b></div>
             <div className='mt-2 w-full text-center'>STK: {stk}</div>
             <div className='mt-2 w-full text-center'>{bankName}</div>
