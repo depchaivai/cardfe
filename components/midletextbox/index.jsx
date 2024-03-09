@@ -46,7 +46,7 @@ const WInfor = ({info, sex = 'lrm', invt = 'both1', guestName ='', customData}) 
                 <div className="flex items-center flex-col w-full pt-16">
                     <div className="font-bold text-md">{ info[typeData[sex].timeText] }</div>
                     <div className='text-sm'>(Tức ngày {info[typeData[sex].timeText2]})</div>
-                    <div className='text-sm font-extralight'>Tại {info[typeData[sex].map]}</div>
+                    <div className='text-sm font-extralight mt-2 text-center'>Tại {info[typeData[sex].map]}</div>
                 </div>
             </div>
             <div className="w-full max-w-[600px] p-6 md:p-16 justify-center flex">
