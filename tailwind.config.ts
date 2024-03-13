@@ -30,6 +30,7 @@ const config: Config = {
         'swal': ['SVNWaliglona', 'system-ui'],
         'hel': ['Helvetica', 'system-ui'],
         'mono': ['ui-monospace', 'SFMono-Regular'],
+        'mont' : ['Montserrat', 'sans-serif']
       }
     },
   },

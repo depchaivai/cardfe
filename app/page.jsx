@@ -12,6 +12,7 @@ import { useHandleInfo } from "@/service/myUtils/useHandleInfo";
 import {invitationData, typeData} from "../service/myUtils/handleSex"
 import GuestSubmit from "@/components/clientComponents/guestSubmit";
 import Link from "next/link";
+import CountDown from "@/components/countdown";
 
 async function getInfo() {
   const res = await fetch('https://cardbe.txh1oupnabgh4p.flashvps.xyz/api/info', { next: { revalidate: 900 } });
@@ -71,9 +72,10 @@ export default async function Home({searchParams}) {
             <div className="absolute bottom-4 md:left-11 w-full md:w-[600px] text-center text-orange-100-300 text-3xl font-swal">Câu chuyện tình yêu</div>
           </div>
         </div>
-        <div className="flex w-full flex-wrap bg-pink-300 min-h-[500px] md:p-10">
+        <div className="w-full bg-pink-300">
+          <div className="w-full max-w-[1200px] flex flex-wrap md:p-10 min-h-[500px] mx-auto">
           <div className="md:w-2/5 w-full flex justify-end items-center"><ImageFrame/></div>
-          <div className="md:w-3/5 w-full text-white py-10 md:p-10 relative">
+          <div className="md:w-3/5 w-full text-white py-10 md:p-10 relative md:pb-20">
             <div className="whitespace-pre-line max-w-[600px] px-8 md:px-12 relative font-hel text-sm">
             <div className="absolute md:block hidden left-0 top-[-40px] w-[100px] h-[100px] border-t border-l"></div>
               {info.loveStory}
@@ -89,6 +91,7 @@ export default async function Home({searchParams}) {
               <AiOutlineHeart size={30}/>
               <AiOutlineHeart size={30}/>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -116,10 +119,19 @@ export default async function Home({searchParams}) {
         <Album albums = {album}/>
       </div>
         <GuestSubmit invt={edcxsw} guestName={ten}/>
-        <div className="flex mx-auto w-full max-w-[600px]">
+        <div className="flex mx-auto w-full max-w-[600px] px-10 pb-10">
           <div className="text-center italic text-slate-600 text-sm px-6 first-letter:uppercase">{invitationData[edcxsw].host} rất muốn chụp với {invitationData[edcxsw].guest} những tấm hình kỷ niệm, vì vậy hãy đến sớm hơn một chút {invitationData[edcxsw].guest} nhé! Đám cưới của {invitationData[edcxsw].host2} sẽ trọn vẹn hơn khi có thêm lời chúc và sự hiện diện của {invitationData[edcxsw].guest}.</div>
         </div>
-        <div className="max-w-[1000px] mx-auto p-6 mt-10">
+        {
+          info[typeData[zxcqaz].time] && <CountDown targetTime={info[typeData[zxcqaz].time]}/>
+        }
+         <div className="max-w-[1000px] mx-auto p-6">
+          <h3 className="font-sgeo text-2xl font-bold mt-4 text-pink-400">Vị trí</h3>
+          <div className="w-full mx-auto max-w-[1000px]">
+            <iframe src={info[typeData[zxcqaz].mapLink]} width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="w-full max-w-[1000px] mx-auto"></iframe>
+          </div>
+        </div>
+        <div className="max-w-[1000px] mx-auto p-6 mb-10">
           <h3 className="font-sgeo text-2xl font-bold text-pink-400">Có thể bạn sẽ cần</h3>
           <div className="w-full flex-col sm:flex-row flex mt-10">
             <div className="w-full sm:w-1/2 flex justify-center">
@@ -128,10 +140,6 @@ export default async function Home({searchParams}) {
             <div className="w-full mt-10 sm:mt-0 sm:w-1/2 flex justify-center">
               <Bankacc who="CHÚ RỂ" stk = "9941308700" name = "TRAN THIEN TRI" qr = "/triqr.jpg" bankName = "Vietcombank"/>
             </div>
-          </div>
-          <h3 className="font-sgeo text-2xl font-bold mt-14 text-pink-400">Vị trí</h3>
-          <div className="w-full mx-auto max-w-[1000px] mb-12">
-            <iframe src={info[typeData[zxcqaz].mapLink]} width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="w-full max-w-[1000px] mx-auto"></iframe>
           </div>
         </div>
         <div className="w-full text-6xl md:text-9xl h-[400px] bg-red-400 flex justify-center items-center font-exm">
