@@ -41,20 +41,20 @@ const CountDown = ({targetTime}) => {
     return (
         <div className="w-full h-[450px] bg-[#183059] flex justify-center items-center py-10 flex-col" style={{ backgroundImage: "url('/hw.png')", backgroundSize: "cover"}}>
             <div className="flex p-4 md:p-10 flex-nowrap justify-center w-full max-w-[1000px]">
-                <div className="w-1/4 flex flex-col bg-[#EF2F3C] justify-center items-center max-w-[130px] p-5 rounded-md text-[#183059] text-6xl">
-                    <div className="font-extrabold font-stans">{day}</div>
+                <div className="w-1/4 flex flex-col bg-[#EF2F3C] justify-center items-center max-w-[130px] p-5 rounded-md text-[#183059] text-3xl md:text-4xl">
+                    <div className="font-extrabold font-ind">{day}</div>
                     <div className='text-sm text-white'>ngày</div>
                 </div>
-                <div className="w-1/4 flex ml-1 md:ml-2 flex-col bg-white justify-center items-center max-w-[130px] p-5 rounded-md text-[#183059] text-6xl">
-                    <div className="font-extrabold font-stans">{hour}</div>
+                <div className="w-1/4 flex ml-1 md:ml-2 flex-col bg-white justify-center items-center max-w-[130px] p-5 rounded-md text-[#183059] text-3xl md:text-4xl">
+                    <div className="font-extrabold font-ind">{hour}</div>
                     <div className='text-sm'>giờ</div>
                 </div>
-                <div className="w-1/4 flex flex-col mx-1 md:mx-2 bg-[#276FBF] justify-center items-center max-w-[130px] p-5 rounded-md text-[#183059] text-6xl">
-                    <div className="font-extrabold font-stans">{minute}</div>
+                <div className="w-1/4 flex flex-col mx-1 md:mx-2 bg-[#276FBF] justify-center items-center max-w-[130px] p-5 rounded-md text-[#183059] text-3xl md:text-4xl">
+                    <div className="font-extrabold font-ind">{minute}</div>
                     <div className='text-sm text-white'>phút</div>
                 </div>
-                <div className="w-1/4 flex flex-col bg-[#F0A202] justify-center items-center max-w-[130px] p-5 rounded-md text-[#183059] text-6xl">
-                    <div className="font-extrabold font-stans">{second}</div>
+                <div className="w-1/4 flex flex-col bg-[#F0A202] justify-center items-center max-w-[130px] p-5 rounded-md text-[#183059] text-3xl md:text-4xl">
+                    <div className="font-extrabold font-ind">{second}</div>
                     <div className='text-sm text-white'>giây</div>
                 </div>
             </div>
